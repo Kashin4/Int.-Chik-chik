@@ -658,6 +658,13 @@ img {
   justify-content: space-between;
 }
 
+.navigation__list {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+
 .footer__list-dev {
   list-style: none;
   font-weight: 400;
@@ -665,6 +672,9 @@ img {
   margin: 0;
   padding: 0 20px 0 0;
   line-height: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
 }
 
 .footer__copy {
@@ -672,4 +682,28 @@ img {
   font-size: 29px;
   line-height: 100%;
   font-feature-settings: "pnum" on, "lnum" on;
+}
+
+@media (max-width: 560px) {
+  .footer__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+  }
+  .navigation__list {
+    font-style: 12px;
+    align-items: flex-start;
+    gap: 16px;
+    flex-direction: column;
+  }
+  .footer__list-dev {
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+  }
+  .footer__copy {
+    font-size: 10px;
+  }
 }
